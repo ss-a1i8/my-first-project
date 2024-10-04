@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="formcss.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <title>Information Form</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Personal Information</h1>
+		<h3>Please fill in all the fields below</h3>
+		<br><br>
+		<form>
+			<input type="text" id="fname" name="fname" placeholder="First Name" required>
+			<br><br>
+			<input type="text" id="lname" name="lname" placeholder="Last Name" required>
+			<br><br>
+			<input min=1 type="number" id="age" name="age" placeholder="Age" required>
+			<br><br>
+			<select id="gender" name="gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+			<br><br>
+			<select id="religion" name="religion" required>
+                <option value="" disabled selected>Religion</option>
+                <option value="muslim">Muslim</option>
+                <option value="christian">Christian</option>
+				<option value="hindu">Hindu</option>
+				<option value="judaism">Judaism</option>
+				<option value="sikh">Sikh</option>
+            </select>
+			<br><br>
+			<input type="text" id="occupation" name="occupation" placeholder="Occupation" required>
+			<br><br>
+			<input type="text" id="ethnicity" name="ethnicity" placeholder="Ethnicity" required>
+			<br><br>
+			<button type="submit" id="btn">SUBMIT</button>
+		</form>
+	</div>
+	<script src="function.js"></script>
+</body>
+</html>
